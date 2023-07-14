@@ -1,0 +1,181 @@
+{
+        "comidas": {
+                "banner": "img/BAKU.jpg",
+                "profileImage": "img/restaurant-logo.jpeg",
+                "nombre": "Restaurant",
+                "acerca_de_nosotros": "Nuestra empresa gastronómica de nivel nacional esta en continua expansión y es reconocida por la confianza y el compromiso mutuo con nuestros colaboradores para alcanzar la excelencia y garantizar la satisfacción requerida por nuestros clientes y el cumplimiento de los compromisos asumidos con ellos."
+        },
+        
+        "pastas": [
+                {
+                        "image":"img/NOQUIS.jpeg",
+                        "Ingredientes": "de papa con salsa",
+                        "precio": "$700"
+                },
+                {
+                        "image":"img/TALLARINES.jpg",
+                        "Ingredientes": "con tomates, albahaca y aceitunas negras.",
+                        "precio": "$1400"
+                },
+                {
+                        "image": "img/TALLARINES CON ALBONDIGAS.jpeg",
+                        "Ingredientes": "con albondigas y salsa.",
+                        "precio": "$1100"
+                },
+                {
+                        "image": "img/RAVIOLES.jpg",
+                        "Ingredientes": "con salsa.",
+                        "precio": "$1800"
+                },
+                {
+                        "image": "img/PASTAS.jpg",
+                        "Ingredientes": "con aceitunas negras, albahaca y salsa.",
+                        "precio": "$1600"
+                },
+                {
+                        "image": "img/LASAGNA DE CARNE.jpeg",
+                        "Ingredientes": "rellena con salsa.",
+                        "precio": "$1600"
+                }
+        ],
+        "hamburguesas": [
+                {
+                        "image": "img/HAMBURGUESA EN PLATO CON PAPAS.jpg",
+                        "Ingredientes": "con papas y ensalada.",
+                        "precio": "$1500"
+                },
+                {
+                        "image": "img/HAMBURGUESA3.jpg",
+                        "Ingredientes": "de carne en pan multicereal con cebolla y queso.                       completa con cebolla,queso y lechuga.",
+                        "precio": "$1300"
+                },
+                {
+                        "image": "img/HAMBURGUESA DE POLLO CON PAPAS.jpg",
+                        "Ingredientes": "completa con papas.",
+                        "precio": "$1400"
+                },
+                {
+                        "image": "img/HAMBURGUESA2.jpg",
+                        "Ingredientes": "con tomate,queso y lechuga.",
+                        "precio": "$1300"
+                },
+                {
+                        "image": "img/HAMBURGUESA3.jpg",
+                        "Ingredientes": "de carne en pan multicereal con cebolla y queso.                       completa con cebolla,queso y lechuga.",
+                        "precio": "$1300"
+                },
+                {
+                        "image": "img/HAMBURGUESA DE POLLO.jpg",
+                        "Ingredientes": "completa con cebolla,queso cheddar y lechuga .", 
+                        "precio": "$1400"
+               
+                }
+        ],
+
+        "pizzas": [
+                {
+                        "image": "img/TIPOS DE PIZZAS.jpg",
+                        "Ingredientes": "porciones con palmitos-con pimiento, hongos y aceitunas-con morron, queso provolone y huevo y otras.",
+                        "precio": "$250"
+                },
+                {
+                        "image": "img/PIZZA TROPICAL.jpg",
+                        "Ingredientes": "con anana y salsa golf.",
+                        "precio": "$1700"
+                },
+                {
+                        "image": "img/PIZZA DE MUZZARELLA JAMON Y MORRON.jpg",
+                        "Ingredientes": "Pizza de muzzarella con jamon, morron y aceitunas verdes.",
+                        "precio": "$1600"
+                },
+                {
+                        "image": "img/PIZZA FUGAZZETA RELLENA.jpeg",
+                        "Ingredientes": "rellena de queso Lincoln y queso azul..",
+                        "precio": "$2000"
+                }
+
+        ],
+
+        "ensalada": [
+                {
+                        "image": "img/ENSALADA CON PECHUGA DE POLLO A LAS BRASAS.jpg",
+                        "Ingredientes": "con tomates cherry, zapallito y lechuga.",
+                        "precio": "$250"
+                }                
+                
+        ],
+
+        "empanadas": [
+                {
+                        "image": "img/EMPANADAS DE JAMON Y QUESO.jpg",
+                        "Ingredientes": "con queso y jamon.",
+                        "precio": "$1100"
+                },
+                {
+                        "image": "img/EMPANADAS DE CARNE.jpg",
+                        "Ingredientes": "con huevo y aceitunas.",
+                        "precio": "$1200"
+                }
+                
+        ],
+
+        "panchos": [
+                {
+                        "image": "img/PANCHO CON PAPAS.jpg",
+                        "Ingredientes": "con mostaza y papas fritas.",
+                        "precio": "$1050"
+                },
+                {
+                        "image": "img/PANCHO COMPLETO.jpg",
+                        "Ingredientes": "con pepinillo, tomate y palta.",
+                        "precio": "$1400"
+                }
+                
+        ],
+
+
+        "bifes": [
+                {
+                        "image": "img/BIFE DE RES A LA PARRILLA.jpg",
+                        "Ingredientes": "carne de res con papas en plato",
+                        "precio": "$2300"
+                }                
+                
+        ],
+
+        "chorizo": [
+                {
+                        "image": "img/CHORIPAN.jpeg",
+                        "Ingredientes": "sandwich de chorizo con chimichurry",
+                        "precio": "$1500"
+                }                
+                
+        ],
+
+
+        "milanesas": [
+                {
+                        "image": "img/MILANESAS CON PAPAS.jpg",
+                        "Ingredientes": "completa con papas y ensalada.",
+                        "precio": "$1500"
+                },
+                {
+                        "image": "img/MILANESAS A CABALLO.jpg",
+                        "Ingredientes": "completa con papas, tomates, huevo y queso.",
+                        "precio": "$2000"
+                },
+                {
+                        "image": "img/SANDWICH DE MILANESA.jpeg",
+                        "Ingredientes": "completa con lechuga, tomates y queso.",
+                        "precio": "$1300"
+                },
+                {
+                        "image": "img/MILANESAS NAPOLITANAS.jpg",
+                        "Ingredientes": "completa con papas.",
+                        "precio": "$1400"
+                }
+              
+        ]
+        
+
+}

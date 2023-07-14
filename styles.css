@@ -1,0 +1,765 @@
+/*:root {
+  --main-c: #ffc300;
+  --black-c: #000000;
+}
+*/
+/** Estilos Generales**/
+  body{
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+  html {
+    font-family: system-ui;
+  } 
+
+  li{
+    list-style: none;
+  }
+
+  /*hero*/
+  .hero{
+    background: url(img/hero-front-page\ images\ restaurante.jpeg) center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+/*Menu HeaderRestaurante*/
+header.main-header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.header-wrap{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.wrap-logo-header{
+  display: flex;
+  align-items: center;
+  flex-basis: 15%;
+}
+
+.logo-header{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.nav-header{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-rap-header{
+  display: flex;
+  flex-basis: 50%;
+}
+
+ul.main-menu{
+  display: flex;
+  width: 100%;
+  z-index: 99;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  font-size: 1.1rem; 
+}
+
+ul.main-menu #nav-main-contact{
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  background-color: #FFC300;
+  color: #fff;
+}
+
+li.menu-item{
+  margin: .75rem;
+  display: flex;
+}
+
+li.menu-item a:hover{
+  color: #FFC300;
+}
+
+i.toggle-menu{
+  display: none;
+  background-color: #fff;
+  border: none;
+  z-index: 9999;
+}
+
+i.toggle-menu img{
+  width: 27px;
+  z-index: 99;
+}
+
+input#check{
+  display: none;
+}
+
+@media (min-width:880px){
+  .header-wrap{
+    padding: .5rem 5rem;
+  }
+}
+
+@media (max-width:768px){
+  header{
+    margin-bottom: 4rem;
+  }
+  .header-wrap{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+   padding: 0;
+   top: 0;
+   z-index: 9999;
+   height: 60px;
+  }
+  .wrap-logo-header{
+    position: fixed;
+    z-index: 999;
+    top: 3%;
+    left: 3%;
+  }
+  i.toggle-menu{
+    display: flex;
+  }
+  ul.main-menu,#nav-main-contact{
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+  ul.main-menu{
+    position: fixed;
+    background-color: #fff;
+  }
+  label.checkbtn{
+    position: fixed;
+    right: 3%;
+    top: 3%;
+  }
+}
+
+  /*Barra de navegacion*/
+  
+  span {
+    background-color: aqua;
+  }
+  
+  li.menu-item {
+    margin: 0.75rem;
+    display: flex;
+  }
+  li.menu-item a {
+    padding: 0.5rem 1rem;
+    
+  }
+  li.menu-item a:hover {
+    color: var(--main-c);
+  }
+  
+  i.toggle-menu img {
+    width: 27px;
+    z-index: 99;
+  }
+  
+  i.toggle-menu {
+    display: none;
+    background-color: #aac0b5;
+    border: none;
+    z-index: 9999;
+  }
+  
+  input#check {
+    display: none;
+  }
+  
+  @media (min-width: 880px) {
+    .header-wrap {
+      padding: 0.5rem 5rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    a.logo-header {
+      color: #fff;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header.main-header {
+      margin-bottom: 4rem;
+    }
+    .header-wrap {
+      position: fixed;
+      width: 100%;
+      background-color: #fff;
+      padding: 0;
+      top: 0;
+      z-index: 9999;
+      height: 60px;
+    }
+    .wrap-logo-header {
+      position: fixed;
+      z-index: 999;
+      top: 3%;
+      left: 3%;
+    }
+  
+    .logo-header,
+    li.menu-item a {
+      color: #222;
+    }
+  
+    i.toggle-menu {
+      display: flex;
+    }
+    
+    label.checkbtn {
+      position: fixed;
+      right: 3%;
+      top: 3%;
+      z-index: 9999;
+      cursor: pointer;
+    }
+    #check:checked ~ ul {
+      display: flex;
+      z-index: 9;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      top: 0;
+      font-size: 2rem;
+    }
+  }
+  
+  /* Hero Section HomePage */
+  .wrap-header-hero {
+    background: linear-gradient(to bottom, rgba(125, 173, 205, 0.75), #a2c0dd80),
+      url(img/hero-front-page-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .hero-home-page {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrap-hero-home-page {
+    color: #fff;
+    text-align: center;
+    width: 50%;
+  }
+  
+  
+  .wrap-hero-home-page p {
+    margin-bottom: 2rem;
+  }
+  
+  figcaption {
+    background-color: rgb(191, 191, 218);
+  }
+  
+  @media (max-width: 768px) {
+    .wrap-hero-home-page {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+  
+  /* Tarjetas de Comida */
+  
+  .wrap-title-section h2{
+    text-align: center; 
+    padding: 1rem 1rem;
+    background-color: #445fae;
+  }
+  
+  .section {
+    max-width: 1200px;
+    margin: 8rem auto;
+    padding: 1rem;
+  }
+  
+  .column-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  
+  .tarjeta-rest {
+    background-repeat: no-repeat;
+    height: 180px;
+    border-radius: 6px;
+    padding: 1rem 0.5rem;
+    display: flex;
+    align-items: end;
+  }
+  .wrap-text_tarjeta-rest {
+    color: #d7d7d7;
+    padding: 0.5rem;
+    border-radius: 6px;
+    background: linear-gradient(to top, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5));
+  }
+  
+  .wrap-text_tarjeta-rest p {
+    color: #f2f2f2;
+  }
+  .cta-wrap_tarjeta-rest {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .precio_tarjeta-rest span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .cta_tarjeta-rest {
+    background-color: var(--main-c);
+    padding: 0.25rem 1rem;
+    border-radius: 4px;
+  }
+  .cta_tarjeta-rest a {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  span {
+    background-color: rgb(86, 129, 151);
+  }
+  @media (max-width: 1024px) {
+    .column-4 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 768px) {
+    .column-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 480px) {
+    .column-4 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  /* Menu Restaurante */
+  
+  .column-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  
+  .menu-restaurante {
+    color: #fff;
+    text-align: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    display: flex;
+    flex-flow: column;
+  }
+  
+  hr{
+    background: #FFC300;
+    height: 2,5px;
+    width: 30px;
+    border: none;
+  }
+  
+  h3{
+    background-color: #5a83c6;
+  }
+
+  h4{
+    background-color: rgba(5, 70, 105, 0.893);
+  }
+  
+  .precio-menu {
+    font-weight: bold;
+  }
+  .precio-menu span {
+    font-size: 2rem;
+    color:#FFC300;
+  }
+  
+  @media (max-width: 768px) {
+    .columns {
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media (max-width: 480px) {
+    .columns {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  /** Cartas Restaurante **/
+  
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .column-2.carta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  
+  .plato-carta {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    background-color: grey;
+  }
+  
+  .img-plato-carta {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+  }
+  
+  .img-plato-carta img {
+    max-width: 100px;
+    max-height: 75px;
+  }
+  
+  .title-plato-carta {
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    border-top: none;
+    flex-basis: 60%;
+    padding: 0 1rem;
+  }
+  
+  .precio-plato-carta {
+    display: flex;
+    flex-basis: 15%;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 680px) {
+    .column-2.carta {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  /*VIDEO*/
+.center{
+    margin: 0 auto;
+    height: 100vh;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+   
+    display: flex;
+    }
+   
+
+ /* Galería de Imágenes */
+
+h2{
+    color:white;
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    text-align: center;
+  }
+  
+  div.galeria{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 (px 20px 0 rgba(0,0,0,0.19));
+    float:left;
+    width: 350;
+  }
+  
+  div.galeria img{
+    width: 100%;
+    height: auto;
+  }
+  
+  div.galeria:hover{
+    border: 1px solid rgb(93, 9, 9);
+    transform: rotate(-3deg);
+  }
+  
+  div.pie{  
+    text-align: center;
+    text-shadow: 2px, 2px 3px 5px purple;
+    padding: 10px;
+  }
+  
+  div.pie p{
+    color:white;
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+    text-align: center;
+  }
+  /* Pagina de Contacto*/
+  
+  .hero-page {
+    background: linear-gradient(to bottom, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5 )), url(https://img.freepik.com/free-photo/restaurant-interior_1127-3394.jpg) 
+      center;
+    background-size: cover;
+    height: 200px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrap-hero-page{
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .section{
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 1rem;
+  }
+  
+  .wrap-two-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
+  #nav-main-contact{
+    background-color: rgb(147, 176, 62);
+  }
+  
+  .cta-main{
+    background-color: rgb(232, 236, 239);
+  }
+  
+  /* Tarjetas de Blog */
+  article.card {
+    max-width: 350px;
+    background-color: #f8f8f8;
+    margin: 1rem;
+    box-shadow: 0px 0px 12px #d7d7d7;
+  }
+  .header-card {
+    display: flex;
+  }
+  .header-card img {
+    border-radius: 8px 8px 0 0;
+    max-height: 200px;
+    height: 200px;
+    width: 100%;
+  }
+  
+  .categoria-card {
+    margin-top: 1rem;
+  }
+  
+  .categoria-card span {
+    background: var(--main-c);
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    color: #fff;
+  }
+  
+  .card footer {
+    display: flex;
+    flex-flow: column;
+    padding: 0 1rem;
+  }
+  
+  .perfil-card {
+    display: flex;
+    align-items: center;
+  }
+  
+  .img-perfil-card {
+    display: flex;
+  }
+  
+  .img-perfil-card img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 1rem 1rem 1rem 0;
+  }
+  .text-perfil-card {
+    display: flex;
+    flex-flow: column;
+  }
+  .text-perfil-card span:nth-child(2) {
+    color: #cfcfcf;
+  }
+  .card-wrap {
+    display: flex;
+    flex-flow: wrap;
+  }
+  
+  @media (max-width: 768px) {
+    .card-wrap {
+      justify-content: center;
+    }
+  }
+  
+  /* Footer de la página */
+  
+  footer {
+    color: var(--black-c);
+  }
+  
+  .footer{
+    /*background-color: rgb(156, 157, 161);*/
+    background-color: #fff;
+    color:#222;
+  }
+  
+  footer ul {
+    padding: 0;
+  }
+
+  footer li{
+    list-style: none;
+  }
+  
+  .wrap-footer {
+    display: grid;
+    grid-template-columns: 30% 15% 15% 20%;
+    column-gap: 5%;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+  
+  .element-footer h5 {
+    margin: 1rem 0;
+  }
+  
+  .text-element-footer {
+    line-height: 2;
+  }
+  
+  .text-element-footer li a {
+    color: #FFC300;
+  }
+  
+  .rrss-element-footer ul {
+    display: flex;
+    flex-flow: wrap;
+  }
+  
+  .rrss-element-footer img {
+    width: 45px;
+  }
+  .rrss-element-footer li {
+    margin-right: 1rem;
+  }
+  
+  .footer-creds {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    color: #576171;
+    font-size: 0.9rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .legal-creds ul {
+    display: flex;
+    flex-flow: row;
+  }
+  
+  .legal-creds ul li {
+    padding-right: 1rem;
+  }
+  
+  .legal-creds ul a {
+    color: #fff;
+    font-size: .9rem;
+  }
+  
+  @media (max-width:768px) {
+    .wrap-footer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .wrap-footer {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .footer-creds {
+      flex-flow: column;
+    }
+  }
+  
+  p-1 {
+    background-color: #e1d6d6;
+  }
+  /********
+  REDES SOCIALES
+  */
+  
+  body {
+    background-color: #445fae;
+  }
+  
+  .footer-creds {
+    padding: 1rem;
+    align-items: stretch;
+    background-color: #5075b1;
+  }
+  
+  /******
+  FORMULARIO
+  ********/
+
+  .formulario{
+    display: flex;
+    flex-flow: column;
+  }
+
+.formulario input, .formulario textarea{
+  margin: .5rem 0;
+  padding: .5rem .2rem;
+}
+
+.formulario button{
+  width: fit-content;
+  border: none;
+  padding: .5rem 1rem;
+  background-color: #FFC300;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+@media (max-width:640px){
+  .wrap-two-column{
+    grid-template-columns: 1fr;
+  }
+}
+ 
